@@ -14,7 +14,5 @@ public class AtmLocatorService implements AtmLocatorServiceInterface {
 		AtmDetails[] details = restTemplate.getForObject("http://localhost:3000/data", AtmDetails[].class);
 		System.out.println("ATM details list::"+details);
 		return details;
-	}
-	
-	
+	}	
 }
